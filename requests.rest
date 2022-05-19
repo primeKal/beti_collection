@@ -1,0 +1,38 @@
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username" : "TestUser"
+}
+###
+
+GET http://localhost:3000/api/item
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJUZXN0VXNlciIsImlhdCI6MTY1MTQ5MTUwMywiZXhwIjoxNjUxNDk1MTAzfQ.TxWu7CmO4mABHDDB14YvOjzXO_kJrxRKPRB1TTvtiAI
+
+###
+POST http://localhost:4000/token
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJUZXN0VXNlciIsImlhdCI6MTY1MTQ5MTUwM30.iXFlBQ7nWhy7vqxi9j33ws4RnWb5l9iwUr42PQdrwV4
+
+
+###
+GET http://localhost:3000/api/item/order
+
+
+
+###
+POST http://localhost:3000/api/item/d 
+Content-Type: application/json
+
+{
+    "itemid" : "624ade0ceb83e934cc1e7e55"
+}
+
+###
+
+GET http://localhost:3000/api/item
+
+
+
+###
+
+GET http://localhost:3000/api/item/order/6271ff8f7bf19e69998962cb
